@@ -31,7 +31,8 @@ import vari from './variables.js';
   }
 
   const getInfoUser = () => {
-    getInfo(`${vari.urlApi}${vari.pokeUser.value}`).then((pokemon) => {
+    const valorPoke = vari.pokeUser.value.toLowerCase();
+    getInfo(`${vari.urlApi}${valorPoke}`).then((pokemon) => {
         vari.errorSearch.innerHTML = "";
         
         const pokemonObjt = {
