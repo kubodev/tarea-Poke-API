@@ -5,7 +5,7 @@ import vari from './variables.js';
 function agregarPoke() {
     const Pokemon = vari.pokeUser.value;
     const botonBorrar = document.createElement('a');
-    botonBorrar.classList = 'borrar-pokemon'; 
+    botonBorrar.classList = 'borrar-pokemon';
     botonBorrar.innerText = 'X'; 
     const li = document.createElement('li');
     li.innerText = Pokemon;

@@ -14,6 +14,9 @@ const listaSearch = document.querySelector('#search-list');
 const pokeUser = document.querySelector('#pokemonUser');
 
 const btnAction = document.querySelector('#btnAction');
+const cardContent = document.querySelector('.card-content');
+
+
 
 let id = "21";
 
@@ -32,5 +35,6 @@ export default {
     errorSearch,
     listaSearch,
     btnAction,
-    pokeUser
+    pokeUser,
+    cardContent
 }
