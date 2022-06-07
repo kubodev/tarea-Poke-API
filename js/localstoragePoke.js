@@ -12,8 +12,6 @@ function agregarPoke() {
     li.appendChild(botonBorrar);
 
     vari.listaSearch.appendChild(li);
-
-    console.log(Pokemon);
     agregarPokeLocalStorage(Pokemon);
 }
 
@@ -28,10 +26,7 @@ function borrarPoke(e) {
 
 function localStorageListo() {
     let pokemons;
-
     pokemons = obtenerPokeLocalStorage();
-
-    console.log(pokemons); 
     pokemons.forEach(function(pokemon) {
         const botonBorrar = document.createElement('a');
         botonBorrar.classList = 'borrar-pokemon'; 
